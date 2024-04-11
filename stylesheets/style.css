@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll. */
+  }
+  
+  .moving-header {
+    display: block;
+    width: 100%;
+    background-color: #f0f0f0; /* Gives a background color for visibility */
+    text-align: center;
+    font-size: 24px;
+    /* Animation name, duration, timing-function, delay, iteration-count, direction */
+    animation: slideIn 5s linear infinite alternate;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
